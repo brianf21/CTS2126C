@@ -28,4 +28,4 @@ reboot
 # Installing WebGoat
 docker pull webgoat/goatandwolf
 
-# docker run -it -p 10.0.0.50:8888:8888 -p 10.0.0.50:8080:8080 -p 10.0.0.50:9090:9090 -e TZ=America/New_York webgoat/goatandwolf
+# docker run -it -p 127.0.0.1:8888:8888 -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 -e TZ=America/New_York webgoat/goatandwolf
