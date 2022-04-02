@@ -1,3 +1,6 @@
+hostnamectl set-hostname rocky.example.com
+echo -e 127.0.0.1\t\trocky.example.com rocky >> /etc/hosts
+echo -e ::1\t\t\trocky.example.com rocky >> /etc/hosts
 dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 dnf install docker-ce --nobest -y --allowerasing
 systemctl start docker
