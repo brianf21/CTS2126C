@@ -23,6 +23,9 @@ git clone https://github.com/Newlode/hackazon/
 
 # cd hackazon/
 # docker-compose up &
+# jobs
+# fg 1
+# ctrl-c
 
 # Installing WebGoat
 docker pull webgoat/goatandwolf
@@ -38,5 +41,6 @@ docker pull vulnerables/web-dvwa
 
 # If it has already been pulled then run this command to start the container
 # docker run --rm -it -p 80:80 vulnerables/web-dvwa
+# ctrl-c to stop
 
 reboot
