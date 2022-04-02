@@ -20,7 +20,6 @@ chmod +x /usr/local/bin/docker-compose
 
 # Installing hackazon
 git clone https://github.com/Newlode/hackazon/
-reboot
 
 # cd hackazon/
 # docker-compose up &
@@ -39,3 +38,5 @@ docker pull vulnerables/web-dvwa
 
 # If it has already been pulled then run this command to start the container
 # docker run --rm -it -p 80:80 vulnerables/web-dvwa
+
+reboot
