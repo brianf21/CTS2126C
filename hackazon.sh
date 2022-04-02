@@ -16,4 +16,4 @@ git clone https://github.com/Newlode/hackazon/
 reboot
 
 # cd hackazon/
-# docker-compose up&
+# docker-compose up &
