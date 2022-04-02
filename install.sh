@@ -7,6 +7,7 @@ echo -e ::1\t\t\trocky.example.com rocky >> /etc/hosts
 nmcli con add con-name ens8-static ifname ens8 type ethernet ip4 10.0.0.50/24 gw4 10.0.0.1 ipv4.dns 8.8.8.8,8.8.4.4 autoconnect yes ipv4.method manual
 nmcli con del ens8
 firewall-cmd --add-service http --permanent --zone public
+firewall-cmd --add-port 8888/tcp --permanent --zone public
 firewall-cmd --add-port 8080/tcp --permanent --zone public
 firewall-cmd --add-port 9090/tcp --permanent --zone public
 
