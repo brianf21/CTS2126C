@@ -4,6 +4,7 @@ hostnamectl set-hostname rocky.example.com
 echo -e 127.0.0.1\t\trocky.example.com rocky >> /etc/hosts
 echo -e ::1\t\t\trocky.example.com rocky >> /etc/hosts
 nmcli con add con-name ens8-static ifname ens8 type ethernet ip4 10.0.0.50/24 gw4 10.0.0.1 ipv4.dns 8.8.8.8,8.8.4.4 autoconnect yes ipv4.method manual
+nmcli con del ens8
 firewall-cmd --add-service http --permanent --zone public
 dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 dnf install docker-ce --nobest -y --allowerasing
