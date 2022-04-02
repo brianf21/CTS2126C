@@ -27,6 +27,8 @@ git clone https://github.com/Newlode/hackazon/
 # fg 1
 # ctrl-c
 
+# In Browser goto http://127.0.0.1
+
 # Installing WebGoat
 docker pull webgoat/goatandwolf
 
@@ -35,6 +37,8 @@ docker pull webgoat/goatandwolf
 # docker container ls -a
 # docker stop <put container name here from list>
 
+# In browser goto http://127.0.0.1:8888
+
 # Installing DVWA
 docker pull vulnerables/web-dvwa
 # You only need to pull once
@@ -42,5 +46,7 @@ docker pull vulnerables/web-dvwa
 # If it has already been pulled then run this command to start the container
 # docker run --rm -it -p 80:80 vulnerables/web-dvwa
 # ctrl-c to stop
+
+# In browser goto http://127.0.0.1
 
 reboot
